@@ -5,3 +5,4 @@ A follow along tutotial from youtube channel 'freeCodeCamp.org' - 'Learn HTML5 a
 Video: https://www.youtube.com/watch?v=mU6anWqZJcc
 
 I just made a website that is pretty much the equivalent to a notebook, in the way that I write and explain the concepts from the video.
+I also added some more concepts and such...
