@@ -8,4 +8,4 @@ I just made a website that is pretty much the equivalent to a notebook, in the w
 I also added some more concepts and such...
 
 
-It is much easier to learn by entering site (link under About), right-clicking, then choosing inspect. From there you can see html code and choose to see css code as well.
+It is much easier to learn by entering site (xelphin-fever.github.io/css-summary/), right-clicking, then choosing inspect. From there you can see html code and choose to see css code as well.
