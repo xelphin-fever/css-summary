@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stylized HTML - CSS</title>
+	<link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,500&display=swap" rel="stylesheet">
+	<!-- Icons / Font-Awesome -->
+	<script src="https://kit.fontawesome.com/ff333b4e2a.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+  <div class="navbar">Navigation
+    <a href="index.html" class="nav-links">html-elements</a>
+    <a href="css-web.html" class="nav-links">css</a>
+    <a href="web-layout.html" class="nav-links">web layout</a>
+  </div>
+	<br>
+
+  <section class="page">
+    <header>
+        <hgroup>
+            <h1>CSS Summary</h1>
+            <h2>In HTML5 and CSS3</h2>
+        </hgroup>
+    </header>
+
+
+    <!-- CSS TEXT MANIPULATION -->
+    <h3 class="title">CSS Text Manipulation</h3>
+    <div class="content">
+      <div class="subject">
+        <p class="font-merriweather">There are different ways you can stylize text in css. <span id="demo-bold">Like making text bold.</span></p>
+        <p id="demo-indent">I can also make text indented. <span id="demo-line-height">Choose line height</span><span id="demo-text">word spacing, text decoration, AND MAke lowercase/uppercase</span></p>
+      </div>
+      <div class="description">
+        <p>'font-weight' property needs to have a weight that is imported for the font in case one has imported a font. Can import fonts from 'google fonts'. In the 'font-family' property you write a series of fonts (in case the font is not available in the browser then it picks the next in line.)</p>
+      </div>
+    </div>
+
+
+    <!-- COLORS -->
+    <h3 class="title">Colors</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="demo-color">I am colorized text</h4>
+      </div>
+      <div class="description">
+        <p>For color can use name ('red') or rgb ('rgb(255, 0, 0)') or hex ('#ff0000') or hsl ('hsl(0, 100%, 50%)'). 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- WIDTH/HEIGHT CALC -->
+    <h3 class="title">Width/Height calc</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="demo-width" id="demo-width1">vw/vh</div>
+        <div class="demo-width" id="demo-width2">px</div>
+        <div class="demo-width" id="demo-width3">%</div>
+      </div>
+      <div class="description">
+        <p>Width/Height can be adjusted using vw/vh (20vw is width 20% of screen), px (pixels on screen) and % (% of parent element). Resize window to see how they act differently.Calc can be used as so: 'width:calc(20vw-10px);' 
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- BOX MODEL -->
+    <h3 class="title">Box Model</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="demo-box-model">Box Model: Demonstrated</h4>
+      </div>
+      <div class="description">
+        <p>
+          Margin -> Border -> Padding -> Content. Shorthand: border/margin/padding: top right bottom left; . 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- BORDER/OUTLINE STYLES -->
+    <h3 class="title">Border/Outline Styles</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="demo-border">I have a fancy border and outline</h4>
+      </div>
+      <div class="description">
+        <p>
+          Shorthand: 'border: [width,px] [style] [color];'
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- DISPLAY PROPERTY -->
+    <h3 class="title">Display Property</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="block">block element (div)</div>
+        <h3 class="block">Display Property; block element (h3)</h3>
+        <p class="block">block element (p)</p>
+        <span class="inline">inline element (span)</span>
+        <a href="#" class="inline">inline element (a)</a>
+        <img src="./resources/images/galaxy_liquid.jpg" alt="" width="100p">
+        <h3 id="instruct_a" class="block"> to have 'a' respected margin use inline-block</h3>
+        <a href="#" id="my_a"  class="inline">some 'a' element</a>
+      </div>
+      <div class="description">
+        <p>
+          In the following made block elements (div,p,h[#]) into inline and inline (a,img,span) into block. Block: skip line for next element, take whole width of screen-default. Inline: on same line,up/down margins not resppected. Inline-Block: same as inline but with up/down margins respected. 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- BOX-SIZING: BORDER-BOX -->
+    <h3 class="title">Box-Sizing: Border-Box</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="demo-border-box"> Without Border-Box</div>
+        <div class="demo-border-box" id="demo-border-box2"> With Border-Box</div>
+      </div>
+      <div class="description">
+        <p>
+          Both 'div's have the same width and height written for them. They both have the same margins and padding. These make the first 'div' bigger, so orignal width/height aren't true. With 'border-box' it adjusts the size so that the original width/height (space takes by element) stay true.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- DISPLAY/OPACITY/VISIBILITY -->
+    <h3 class="title">Display/Opacity/Visibility</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 class="demo-basic" id="demo-visibility1">display:none;</h4>
+        <h4 class="demo-basic" id="demo-visibility2">opacity:0.5;</h4>
+        <h4 class="demo-basic" id="demo-visibility3">opacity:0;</h4>
+        <h4 class="demo-basic" id="demo-visibility4">visibility:hidden;</h4>
+      </div>
+      <div class="description">
+        <p>
+          In the html you can see the order of the elements: <br> display:none; (the element is gone, doesn't take space) <br> opacity:0; (the opacity is transparent) <br>visibility:hidden; (the element still takes space but is no longer seen)
+        </p>
+      </div>
+    </div>
+
+
+    <!-- BACKGROUND IMAGES -->
+    <h3 class="title">Bacground Images</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="div_background">
+        <div></div>
+        <p id="para_img1" class="demo-basic"></p>
+        <p id="para_img2" class="demo-basic">Text on Image</p>
+        <p id="para_img3" class="demo-basic">Text on Image</p>
+        <p id="para_img4" class="demo-basic"></p>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          The first image has a repeat property. <br>---<br>'background-repeat: repeat-x;' repeats once only on x axis. <br><br> 'background-repeat: space;' has space between images. <br><br> 'background-repeat: round;', when repeated, there won't be 1/2 or 1/3 of the image leftover, it will be rounded. <br>---<br><br> The first image has 'background-size:contain;' <br><br> The second and third have 'background-size: cover;'. 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FLOAT -->
+    <h3 class="title">Float</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="clearfix">
+          <img src="./resources/images/tea-image.jpg" alt="tea image" height="100px" id="demo-float1">
+          <img src="./resources/images/tea-image.jpg" alt="tea image" height="50px" id="demo-float2">
+          <p id="demo-float3">We will be seeing the effects of the float property using the images. The first image has a float to the left. The second has a float to the right. However, this paragraph has cleared the right float, therefore it is to it as if the image doesn't have a right float.</p>
+          <img src="./resources/images/tea-image.jpg" alt="tea image" height="50px" id="demo-float4">
+          <p>There is also 'overflow:hidden;' -> makes so that overflowing elements are hidden. 'overflow:auto' -> makes so parent element adjusts to fit float children (what is done here)</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- POSITIONS -->
+    <h3 class="title">Positions</h3>
+    <div class="content">
+      <div class="subject">
+        <p>Remember parent ( in this case grandparent div, 'content' div) has property position:relative; </p>
+        <p id="demo-position1">I am a paragraph with 'position:relative;' myself. Therefore I can move relative to my original position.</p>
+        <p>I am a paragraph with a span that is absolute. <span id="demo-position2">I have position:absolute; - bottom:0;</span> And thus, it moves to the first parent that has the relative property (div-'content')</p>
+      </div>
+      <div class="description">
+        <p>
+          There is also 'position:fixed;' which stays in the same place relative to the viewport (Like the background image and the navbar). <br>---<br> There is also 'position:sticky; (top:0;)' which sticks to the page as the user scrolls past it. 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- MEDIA QUERIES -->
+    <h3 class="title">Media Queries</h3>
+    <div class="content">
+      <div class="subject">
+        <img src="./resources/images/galaxy_liquid.jpg" alt="galaxy liquid" id="demo-media1">
+        <p id="demo-media2">Change screen size and see how we change. This is done with media queries. Elements can look and act differently depending on the scree size selected.</p>
+      </div>
+      <div class="description">
+        <p>It is usually better to start with the default being the smallest screen size and the media queries adjusting for the bigger screen. <br><br> Also, you can pick a media query for landscape when it comes to phones.</p>
+      </div>
+    </div>
+    
+
+    <!-- Z-INDEX -->
+    <h3 class="title">Z-Index</h3>
+    <div class="content">
+      <div class="subject" class="make-relative">
+        <img src="./resources/images/tea-image.jpg" alt="galaxy liquid" id="demo-z1" class="demo-z">
+        <img src="./resources/images/tea-image.jpg" alt="galaxy liquid" id="demo-z2" class="demo-z">
+        <img src="./resources/images/tea-image.jpg" alt="galaxy liquid" id="demo-z3" class="demo-z">
+        
+      </div>
+      <div class="description">
+        <p>As you can see the middle image is above the other two images, this is by using the 'z-index' property. The lower the index, the more behind it is.</p>
+      </div>
+    </div>
+
+
+    <!-- PSEUDO ELEMENTS -->
+    <h3 class="title">Pseudo Elements</h3>
+    <div class="content">
+      <div class="subject">
+        <p id="demo-pseudo-element">This is going to be a paragraph that will be affected by various pseudo elements. I can for example affect the first line of the paragraph or the first letter. Add something before or after the paragraph as well. Also stylize selection <span>even for differet elements</span></p>
+      </div>
+      <div class="description">
+        <p>Pseudo elements have been added to the left paragraph. <br>--- <br>Select some text from a paragraph/span element and see that it's stylized. </p>
+      </div>
+    </div>
+    
+
+    <!-- PSEUDO CLASSES -->
+    <h3 class="title">Pseudo Classes</h3>
+    <div class="content">
+      <div class="subject">
+        <p class="pseudo_class_p" >I'm first (paragraph) element <span> I'm span element</span></p>
+        <p class="pseudo_class_p" >I'm second paragraph element <span> I'm span element</span></p>
+        <a href="#" class="pseudo_class_a">This is a link</a>
+        <a href="#" class="pseudo_class_a">This is second link</a>
+      </div>
+      <div class="description">
+        <p>Try hovering over the paragraph, spans and links to see how pseudo classes work</p>
+      </div>
+    </div>
+    
+
+    <!-- TRANSFORM -->
+    <h3 class="title">Transform</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="tr_div" id="tra_div1">I'm a div</div>
+        <div class="tr_div" id="tra_div2">I'm a div</div>
+        <div class="tr_div" id="tra_div3">I'm a div</div>
+        <div class="tr_div" id="tra_div4">I'm a div</div>
+        <div class="tr_div" id="tra_div5">I'm a div</div>
+      </div>
+      <div class="description">
+        <p>Hover over elements to see Transform effects.</p>
+      </div>
+    </div>
+    
+
+    <!-- TRANSITION -->
+    <h3 class="title">Transition</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="tr_div" id="transition_div1">I'm a div</div>
+        <div class="tr_div" id="transition_div2">I'm a div</div>
+        <div class="tr_div" id="transition_div3">I'm a div</div>
+        <div class="tr_div" id="transition_div4">I'm a div</div>
+      </div>
+      <div class="description">
+        <p>Hover over elements to see Transition effects.</p>
+      </div>
+    </div>
+
+
+    <!-- ANIMATION -->
+    <h3 class="title">Animation</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="tr_div" class="anim" id="animation_div1">I'm a div</div>
+        <div class="tr_div" class="anim"  id="animation_div2">I'm a div</div>
+        <div class="tr_div" class="anim"  id="animation_div3">I'm a div</div>
+        <div class="tr_div" class="anim"  id="animation_div4">I'm a div</div>
+        <div class="tr_div" class="anim"  id="animation_div5">I'm a div</div>
+      </div>
+      <div class="description">
+        <p>Refresh page to see Animations.</p>
+      </div>
+    </div>
+
+
+
+    <!-- FONT AWESOME -->
+    <h3 class="title">Font Awesome</h3>
+    <div class="content">
+      <div class="subject">
+        <i class="fas fa-user-astronaut"></i>
+        <i class="fas fa-space-shuttle"></i>
+        <h4 id="fa_h4">I am h4 element with span <span><i class="fas fa-meteor"></i></span></h4>
+      </div>
+      <div class="description">
+        <p>Go to Font Awesome webpage and you can get icons fromt there. Just remember to add the needed link in the 'head' element of the html.</p>
+      </div>
+    </div>
+
+
+
+    <!-- SHADOW -->
+    <h3 class="title">Shadow</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="shadow-h4-1">I am a text with shadow</h4>
+        <h4 id="shadow-h4-2">I am a text with a blurry shadow</h4>
+        <h4 id="shadow-h4-3">I am a text with multiple shadows</h4>
+        <h4 id="shadow-h4-4">I am a text with a text border</h4>
+        <div class="shadow-div">I am a div with a box-shadow</div>
+      </div>
+      <div class="description">
+        <p>Can add shadow using 'text-shadow:[]' and 'box-shadow:[]' property.</p>
+      </div>
+    </div>
+
+
+    <!-- DROPDOWN -->
+    <h3 class="title">Shadow</h3>
+    <div class="content">
+      <div class="subject">
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <p>Hover on the dropdown to see the options</p>
+      </div>
+    </div>
+
+
+    <!-- ATTRIBUTE SELECTOR -->
+    <h3 class="title">Attribute Selector</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="demo-attribute1" height="40px">I have attribute height="40px". <br> So with 'h4[height="40px"] {...}' I am selected</h4>
+
+        <h4 id="demo-attribute2" class= "flower-demo-attribute" >I have class="flower-demo-attribute". <br> So with '[class|="flower"] {...}', I am selected. <br> '[class^="flower"] {...}' also works, difference is it does not need to be part of a whole word.</h4>
+
+        <h4 id="demo-attribute3" title="selector attri stuff">I have title="selector attri stuff". <br> So with the '[title~="attri"] {...}' I am selected. </h4>
+
+        <h4 id="demo-attribute4">I have id="demo-attribute4". <br> So with the '[id$="bute4"] {...}' I am selected because my attribute ends with it(doesn't need to be part of whole word). </h4>
+
+        <h4 id="demo-attribute5" class="demo-attribute birdy b-random">I have class="demo-attribute birds b-random. <br> So with the '[class*="bird"] {...}' I am selected because my attribute contains that word. </h4>
+      </div>
+      <div class="description">
+        <p>Attribute selectors allow you to select all elements that have a certain attribute. This is useful especially for styling forms (give all text inputs a gray background ex.)</p>
+      </div>
+    </div>
+
+
+
+    <!-- TEXT EFFECTS -->
+    <h3 class="title">Text Effects</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 id="demo-overflow1">I have text that will not fit in the box. So instead there will be '...'</h4>
+        <p id="demo-overflow2">This is a paragraph with the property: 'word-wrap:break-word;'. This is so that when there is a veryveryveryveryveryveryverylongword it breaks apart instead of overflowing.</p>
+        <p>This is a paragraph and inside I have a span <span id="demo-overflow3">I'm the Span</span> who has property: 'writing-mode: vertical-rl;'</p>
+      </div>
+      <div class="description">
+        <p>Various text effects. Hover over the first h4 element to see the overflowed text that's hidden.</p>
+      </div>
+    </div>
+
+
+    <!-- TOOLTIP -->
+    <h3 class="title">TOOLTIPS</h3>
+    <div class="content">
+      <div class="subject">
+        <h4 class="demo-tooltip">Hover to see Tooltip<span class="tooltiptext">Tooltip text</span></h4>
+      </div>
+      <div class="description">
+        <p>Attribute selectors allow you to select all elements that have a certain attribute. This is useful especially for styling forms (give all text inputs a gray background ex.)</p>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+
+  
+</body>
+</html>
